@@ -9,7 +9,7 @@ Two main experiments were conducted: The first one consists on applying 2D convo
 
 #### Applying 2D convolutions over spectrograms
 
-In this experiment, the input consists on 3 images of size 40x100. The first image is the spectrogram, which was computed using the toolkit ![kaldi](https://kaldi-asr.org/), the second and third images are the first and second derivatives from the spectrogram. This is similar to the feature extraction implemented in this [article](https://arxiv.org/pdf/1803.05427.pdf).
+In this experiment, the input consists on 3 images of size 40x100. The first image is the spectrogram, which was computed using the toolkit [kaldi](https://kaldi-asr.org/), the second and third images are the first and second derivatives from the spectrogram. This is similar to the feature extraction implemented in this [article](https://arxiv.org/pdf/1803.05427.pdf).
 
 A model based on convolutional neural networks was built, with variations over the amount of units of the fully-connected layers. Also, batch normalization was implemented before the activation of the first convolutional layer. After some attemps with more complex models (4 convolutional layers and 2 fully connected layers), better results were obtained with simpler models (1 convolutional layer and 2 fully conected layers). Dropout is also implemented.
 
@@ -34,7 +34,7 @@ A bigger amount of neurons in the fully-connected layers did not improve the per
 
 Batch Normalization improved the performance with more complex models (more convolutional layers). With simpler models, batch normalization did not provide any advantage. 
 
-The results can be comparable to the ones obtained in this ![article](https://ieeexplore.ieee.org/abstract/document/1221721). Here, the use classical approaches to solve this problem. 
+The results can be comparable to the ones obtained in this [article](https://ieeexplore.ieee.org/abstract/document/1221721). Here, the use classical approaches to solve this problem. 
 
 
 
