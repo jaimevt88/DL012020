@@ -15,11 +15,16 @@ A model based on convolutional neural networks was built, with variations over t
 
 The notebook included in this repository collects the results of implementing 6 diferent models with variable size on the fully connected layers and the option of applying batch normalization after the first convolutional layer. Accuracies and loss are logged in tensorboard, and the best models in terms of validation accuracies are chosen and its results are shown.
 
+![2D Conv. Architecture](https://github.com/jaimevt88/DL012020/blob/master/images/2d-2.png)
+![2D Conv. Architecture - 2](https://github.com/jaimevt88/DL012020/blob/master/images/2d.png)
+
 #### Applying 1D convolutions over raw audio signal
 
 In this experiment the input consists on one vector of 48000 components, which is sampled from the raw audio signal. Here, different amount and filter sizes in the convolutional layer were explored in order to get better results. The best results were obtained when using a model with one convolutional layer with 40 filters of size 1800.
 
 The notebook includes the results of implementing 6 diferent models with variable size on the fully connected layers and the option of applying batch normalization after the first convolutional layer.  
+
+![1D Conv. Architecture](https://github.com/jaimevt88/DL012020/blob/master/images/1d.png)
 
 #### Results
 
